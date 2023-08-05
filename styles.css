@@ -1,0 +1,112 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Stick No Bills',sans-serif;
+    font-weight: bold;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #e0e3eb;
+}
+
+.container{
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 10px 20px 20px;
+    background: #262525;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.display{
+    height: 80px;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: #030f1a;
+    pointer-events: none;
+    background-color: #efeded;
+    border-radius: 12px;
+}
+
+.buttons{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.buttons button{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    background-color: #eee;
+    width: 57.5px;
+    
+}
+
+.buttons button:active{
+    transform: scale(1.1);
+}
+
+.operator{
+    color: #077de4;
+}
+
+.orange{
+    color: orangered;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 5px;
+    color: #e0e3eb;
+}
+
+.aboutKey{
+    position: absolute;
+    max-width: 215px;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    opacity: 60%;
+    cursor: default;
+    font-size: 15px;
+}
+
+p{
+    margin-bottom: 4px;
+    border: 2px solid gray;
+    border-radius: 12px;
+}
+
+footer{
+    position: fixed;
+    bottom: 1px;
+    right: 2px;
+    text-align: left;
+}
+
+@media screen and (max-height:662px) {
+    .aboutKey{
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .aboutKey{
+        display: none;
+    }
+}
